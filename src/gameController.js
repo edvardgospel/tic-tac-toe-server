@@ -61,7 +61,6 @@ const joinGame = (req, res) => {
     if (err) {
       res.status(404).json({ err })
     } else if (games) {
-      //const { _id, fields, nextPlayer } = game
       if (!games.length) {
         res.status(404).json({ err: 'Resource not found' })
       } else {
